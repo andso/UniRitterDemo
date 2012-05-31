@@ -78,6 +78,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AutorService.svc" />
+    <Content Include="GeneroService.svc" />
+    <Content Include="LivroService.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -94,6 +96,14 @@
       <DependentUpon>AutorService.svc</DependentUpon>
     </Compile>
     <Compile Include="BaseService.cs" />
+    <Compile Include="GeneroService.svc.cs">
+      <DependentUpon>GeneroService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="LivroService.svc.cs">
+      <DependentUpon>LivroService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IGeneroService.cs" />
+    <Compile Include="ILivroService.cs" />
     <Compile Include="DataContracts\AutorDataContract.cs" />
     <Compile Include="DataContracts\EntityDataContract.cs" />
     <Compile Include="DataContracts\GeneroDataContract.cs" />

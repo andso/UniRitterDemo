@@ -23,5 +23,11 @@
         public Autor Autor { get; set; }
 
         public Genero Genero { get; set; }
+
+        [ForeignKey("Autor")]
+        public int AutorId { get; set; }
+
+        [ForeignKey("Genero")]
+        public int GeneroId { get; set; }
     }
 }
