@@ -5,6 +5,9 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 
+/*
+
+*/
 namespace UniRitterDemo.Services
 {
     using UniRitterDemo.Services.DataContracts;
@@ -17,5 +20,6 @@ namespace UniRitterDemo.Services
 
         [OperationContract]
         AutorDataContract[] BuscarTodos();
+		
     }
 }
